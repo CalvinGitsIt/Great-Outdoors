@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Behold Nature's Beauty!</title>
-<link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
-<script src="scripts/myscripts.js"></script>
+    <title>Behold Nature's Beauty!</title>
+    <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
+    <script src="scripts/myscripts.js" defer></script>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        #alttext {
+        position: absolute;
+        left: 105%;
+        top: 0%;
+        transform: translateY(-50%);
+        font-size: 50px;
+        color: black;
+        background: none;
+        padding: 0;
+        display: none;
+        white-space: nowrap;
+        }
+    </style>
 </head>
-<body >
+<body>
 
 <h1>The Sparkling Waters</h1>
 
-<img src = "images/waterfall.jpg" alt="Ranger Falls" onmouseover="showAlt(this)" onmouseout="hideAlt(this)">
-<p id="alttext" style="font-size:50px"> <p></p>
+<div class="image-container" onmouseover="showAltNew()" onmouseout="hideAltNew()">
+    <img src="images/waterfall.jpg" alt="Ranger Falls">
+    <p id="alttext"></p>
+</div>
 
 <p>
     <br><b>Hours:</b>
@@ -22,16 +43,19 @@
     <br><br><b>Fun fact:</b>
     Ranger Falls is named in honor of the park rangers who work to preserve and protect Mount Rainier National Park. The falls are particularly beautiful during the spring when snowmelt increases the water flow, creating a stunning cascade. The surrounding forest is also rich in wildlife and provides an immersive natural experience.
 </p>
+
 <br><br>
-    
-<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10887.458435747392!2d-121.8539925!3d46.98399385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490c359a537ccf7%3A0xf0ee4f2b2154d91!2sRanger%20Falls!5e0!3m2!1sen!2sus!4v1740552946969!5m2!1sen!2sus"
-    width="500" height="300" style="border:0;" allowfullscreen=""
-    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+
+<p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10887.458435747392!2d-121.8539925!3d46.98399385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490c359a537ccf7%3A0xf0ee4f2b2154d91!2sRanger%20Falls!5e0!3m2!1sen!2sus!4v1740552946969!5m2!1sen!2sus"
+        width="500" height="300" style="border:0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</p>
+
 <figcaption>Take in the Scenery</figcaption>
 
-
 <ul>
-<li><a href="index.html">Table of Contents</a></li>
+    <li><a href="index.html">Table of Contents</a></li>
 </ul>
 
 </body>
