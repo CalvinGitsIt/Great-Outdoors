@@ -1,4 +1,4 @@
-// old script
+// old scripts
 function showAlt(x) {
   document.getElementById("alttext").innerHTML=x.alt;
 }
@@ -7,7 +7,7 @@ function hideAlt(x) {
   document.getElementById("alttext").innerHTML="";
 }
 
-// new script
+// new scripts
 document.addEventListener("DOMContentLoaded", function() {
   let altText = document.getElementById("alttext");
   let img = document.querySelector(".image-container img");
