@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>    
     <title>Welcome to Great Outdoors!</title>
     <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
     <script src="scripts/myscripts.js" defer></script>
@@ -8,44 +8,52 @@
         .image-container {
             position: relative;
             display: inline-block;
+            background: none;
         }
         
         #alttext {
-        position: absolute;
-        left: 105%;
-        top: 0%;
-        transform: translateY(-50%);
-        font-size: 50px;
-        color: black;
-        background: none;
-        padding: 0;
-        display: none;
-        white-space: nowrap;
+            position: absolute;
+            left: 105%;
+            top: 0%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: black;
+            background: none;
+            padding: 0;
+            display: none;
+            white-space: nowrap;
+        }
+        html {
+            background: url("images/outdoors_blurred.jpg");
+            background-size: cover;
         }
     </style>
 
 </head>
 
 <body>
+    <h1>Welcome to the Great Outdoors!</h1>
 
-<h1>Welcome to the Great Outdoors!</h1>
+    <div class="image-container" onmouseover="showAltNew()" onmouseout="hideAltNew()">
+        <img src="images/outdoors.jpg" alt="Great Outdoors">
+        <p id="alttext"></p>
+    </div>
 
-<div class="image-container" onmouseover="showAltNew()" onmouseout="hideAltNew()">
-    <img src="images/outdoors.jpg" alt="Great Outdoors">
-    <p id="alttext"></p>
-</div>
+    <br><br>
+    <figcaption>Your Adventure Awaits!</figcaption>
 
-<br><br>
-<figcaption>Your Adventure Awaits!</figcaption>
-
-<ul>
-<li><a href="mountain.html">Climb the Mountain</a></li>
-<li><a href="forest.html">Wander the Forest</a></li>
-<li><a href="falls.html">See the Falls</a></li>
-<li><a href="ferry.html">Ride the Ferry</a></li>
-<li><a href="lake.html">Walk Around the Lake</a></li>
-<li><a href="park.html">Read in the Park</a></li>
-</ul>
-
+    <ul>
+    <li><a href="mountain.html">Climb the Mountain</a></li>
+    <li><a href="forest.html">Wander the Forest</a></li>
+    <li><a href="falls.html">See the Falls</a></li>
+    <li><a href="ferry.html">Ride the Ferry</a></li>
+    <li><a href="lake.html">Walk Around the Lake</a></li>
+    <li><a href="park.html">Read in the Park</a></li>
+    </ul>
+    <style>
+        body {
+            background: none;
+        }
+    </style>
 </body>
 </html>
