@@ -25,3 +25,10 @@ figcaption {
   font-style: italic;
   font-size: 30px;
 }
+
+.text-background {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.7); /* white with 70% opacity */
+  padding: 10px; /* add some space around di text */
+  border-radius: 5px; /* mek di corners round */
+}
