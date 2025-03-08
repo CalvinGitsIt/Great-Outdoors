@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <a href="lake.html">
+        <img src="images/back.png" alt="Walk Around the Lake" style="width: 50px; height: 50px;
+        border: none; border-radius: 5px">
+      </a>
+    <a href="index.html">
+        <img src="images/home.png" alt="Table of Contents" style="width: 50px; height: 50px;
+        border: none; border-radius: 5px;">
+      </a>
+    <a href="mountain.html">
+        <img src="images/next.png" alt="Climb the Mountain" style="width: 50px; height: 50px;
+        border: none; border-radius: 5px">
+      </a>
     <title>Retreat in the Park</title>
     <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
     <script src="scripts/myscripts.js" defer></script>
@@ -9,18 +21,22 @@
             position: relative;
             display: inline-block;
         }
-        
         #alttext {
-        position: absolute;
-        left: 105%;
-        top: 0%;
-        transform: translateY(-50%);
-        font-size: 50px;
-        color: black;
-        background: none;
-        padding: 0;
-        display: none;
-        white-space: nowrap;
+            position: absolute;
+            left: 105%;
+            top: 0%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 0;
+            border-radius: 5px;
+            display: none;
+            white-space: nowrap;
+        }
+        html {
+            background-image: url(images/park_blurred.jpg);
+            background-size: cover;
         }
     </style>
 </head>
@@ -33,29 +49,35 @@
     <p id="alttext"></p>
 </div>
 
-<p>
-    <br><b>Hours:</b>  
-    Lake Union Park is open year-round from dawn to dusk. Some specific facilities within the park, such as the Museum of History & Industry (MOHAI), may have their own hours of operation, so it’s best to check in advance if you plan to visit specific attractions.  
-    <br><br><b>Requirements:</b>  
-    No special permits are needed to enjoy the public spaces of Lake Union Park. However, some activities, such as renting kayaks, paddleboards, or boats, may require reservations and a rental fee. Visitors are encouraged to follow park rules and respect the natural environment.  
-    <br><br><b>Accessibility:</b>  
-    Lake Union Park is highly accessible, with paved pathways for walking, biking, and wheelchairs. The park has accessible restrooms, parking, and is also located near public transportation options. Visitors with disabilities can easily navigate the park’s main attractions.  
-    <br><br><b>Fun fact:</b>  
-    Lake Union Park is located along the shores of Lake Union in Seattle and is home to some cool attractions, including the historic fleet of vessels at the Center for Wooden Boats. The park also offers stunning views of the Seattle skyline and the iconic Space Needle. It’s a popular spot for picnicking, watching seaplanes land, or enjoying the boats and kayaks on the water!  
-</p>
+    <p class="text-background">
+        <br><b>Hours:</b>  
+        Lake Union Park is open year-round from dawn to dusk. Some specific facilities within the park, such as the Museum of History & Industry (MOHAI), may have their own hours of operation, so it’s best to check in advance if you plan to visit specific attractions.  
+        <br><br><b>Requirements:</b>  
+        No special permits are needed to enjoy the public spaces of Lake Union Park. However, some activities, such as renting kayaks, paddleboards, or boats, may require reservations and a rental fee. Visitors are encouraged to follow park rules and respect the natural environment.  
+        <br><br><b>Accessibility:</b>  
+        Lake Union Park is highly accessible, with paved pathways for walking, biking, and wheelchairs. The park has accessible restrooms, parking, and is also located near public transportation options. Visitors with disabilities can easily navigate the park’s main attractions.  
+        <br><br><b>Fun fact:</b>  
+        <br><br>
+        Lake Union Park is located along the shores of Lake Union in Seattle and is home to some cool attractions, including the historic fleet of vessels at the Center for Wooden Boats. The park also offers stunning views of the Seattle skyline and the iconic Space Needle. It’s a popular spot for picnicking, watching seaplanes land, or enjoying the boats and kayaks on the water!          <a href="https://mohai.org/">Click here</a> for information about the Museum in the park.
 
-<a href="https://mohai.org/">Click here</a> for information about the Museum in the park.
+    </p>
+
 
 <br><br>
 
-<p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21511.602669104595!2d-122.35463966044922!3d47.627096699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153bdc42ba65%3A0xc2981a6ccaed5d7d!2sLake%20Union%20Park!5e0!3m2!1sen!2sus!4v1740553838464!5m2!1sen!2sus"
-    width="500" height="300" style="border:0;" allowfullscreen=""
-    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-<figcaption>Read Up</figcaption>
+    <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21511.602669104595!2d-122.35463966044922!3d47.627096699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490153bdc42ba65%3A0xc2981a6ccaed5d7d!2sLake%20Union%20Park!5e0!3m2!1sen!2sus!4v1740553838464!5m2!1sen!2sus"
+        width="500" height="300" style="border:0;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    <figcaption>Read Up</figcaption>
 
-<ul>
-<li><a href="index.html">Table of Contents</a></li>
-</ul>
+    <ul>
+    <li><a href="index.html">Table of Contents</a></li>
+    </ul>
+    <style>
+        body {
+            background: none;
+        }
+    </style>
 
 </body>
 </html>

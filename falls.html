@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <a href="forest.html">
+        <img src="images/back.png" alt="Wander the Forest" style="width: 50px; height: 50px;
+        border: none; border-radius: 5px">
+      </a>
+    <a href="index.html">
+        <img src="images/home.png" alt="Table of Contents" style="width: 50px; height: 50px;
+        border: none; border-radius: 5px;">
+      </a>
+    <a href="ferry.html">
+        <img src="images/next.png" alt="Ride the Ferry" style="width: 50px; height: 50px;
+        border: none; border-radius: 5px">
+      </a>
+      
     <title>Behold Nature's Beauty!</title>
     <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
     <script src="scripts/myscripts.js" defer></script>
@@ -8,57 +21,70 @@
         .image-container {
             position: relative;
             display: inline-block;
+            background: none;
+        }
+        #alttext {
+            position: absolute;
+            left: 105%;
+            top: 0%;
+            transform: translateY(-50%);
+            font-size: 50px;
+            color: black;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 0;
+            border-radius: 5px;
+            display: none;
+            white-space: nowrap;
+        }
+        html {
+            background: url("images/waterfall_blurred.jpg");
+            background-size: cover;
         }
         
-        #alttext {
-        position: absolute;
-        left: 105%;
-        top: 0%;
-        transform: translateY(-50%);
-        font-size: 50px;
-        color: black;
-        background: none;
-        padding: 0;
-        display: none;
-        white-space: nowrap;
-        }
     </style>
 </head>
 <body>
 
-<h1>The Sparkling Waters</h1>
+    <h1>The Sparkling Waters</h1>
 
-<div class="image-container" onmouseover="showAltNew()" onmouseout="hideAltNew()">
-    <img src="images/waterfall.jpg" alt="Ranger Falls">
-    <p id="alttext"></p>
-</div>
+    <div class="image-container" onmouseover="showAltNew()" onmouseout="hideAltNew()">
+        <img src="images/waterfall.jpg" alt="Ranger Falls">
+        <p id="alttext"></p>
+    </div>
 
-<p>
-    <br><b>Hours:</b>
-    Ranger Falls is located within Mount Rainier National Park and is accessible year-round. However, the best time to visit is during the spring through early fall when the trail to the falls is more easily accessible, as snow can obstruct the trail during the winter months.
-    <br><br><b>Requirements:</b>
-    No special permits are required to visit Ranger Falls, but visitors are encouraged to follow park regulations, stay on marked trails, and practice Leave No Trace principles. Proper footwear for hiking is recommended, especially during wetter conditions.
-    <br><br><b>Accessibility:</b>
-    The trail to Ranger Falls is about 1.6 miles (round-trip) and is considered a moderate hike. The trail is somewhat steep in sections and may not be accessible for those with limited mobility. It is not wheelchair accessible, but the hike is generally manageable for most visitors who are comfortable with a short uphill walk.
-    <br><br><b>Fun fact:</b>
-    Ranger Falls is named in honor of the park rangers who work to preserve and protect Mount Rainier National Park. The falls are particularly beautiful during the spring when snowmelt increases the water flow, creating a stunning cascade. The surrounding forest is also rich in wildlife and provides an immersive natural experience.
-</p>
-<p>
-    <a href="https://www.wta.org/go-hiking/trip-reports/trip_report.2023-12-10.9388242929">Click Here</a> for a link to information about the trail to access the falls.
+    
+    <p class="text-background">
+        <br><b>Hours:</b>
+        Ranger Falls is located within Mount Rainier National Park and is accessible year-round. However, the best time to visit is during the spring through early fall when the trail to the falls is more easily accessible, as snow can obstruct the trail during the winter months.
+        <br><br><b>Requirements:</b>
+        No special permits are required to visit Ranger Falls, but visitors are encouraged to follow park regulations, stay on marked trails, and practice Leave No Trace principles. Proper footwear for hiking is recommended, especially during wetter conditions.
+        <br><br><b>Accessibility:</b>
+        The trail to Ranger Falls is about 1.6 miles (round-trip) and is considered a moderate hike. The trail is somewhat steep in sections and may not be accessible for those with limited mobility. It is not wheelchair accessible, but the hike is generally manageable for most visitors who are comfortable with a short uphill walk.
+        <br><br><b>Fun fact:</b>
+        Ranger Falls is named in honor of the park rangers who work to preserve and protect Mount Rainier National Park. The falls are particularly beautiful during the spring when snowmelt increases the water flow, creating a stunning cascade. The surrounding forest is also rich in wildlife and provides an immersive natural experience.
+        <br><br>
+        <a href="https://www.wta.org/go-hiking/trip-reports/trip_report.2023-12-10.9388242929">Click Here</a> for a link to information about the trail to access the falls.
     </p>
-<br><br>
+    
+    
+    <br><br>
 
-<p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10887.458435747392!2d-121.8539925!3d46.98399385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490c359a537ccf7%3A0xf0ee4f2b2154d91!2sRanger%20Falls!5e0!3m2!1sen!2sus!4v1740552946969!5m2!1sen!2sus"
-        width="500" height="300" style="border:0;" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</p>
+    <p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10887.458435747392!2d-121.8539925!3d46.98399385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490c359a537ccf7%3A0xf0ee4f2b2154d91!2sRanger%20Falls!5e0!3m2!1sen!2sus!4v1740552946969!5m2!1sen!2sus"
+            width="500" height="300" style="border:0;" allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </p>
 
-<figcaption>Take in the Scenery</figcaption>
+    <figcaption>Take in the Scenery</figcaption>
 
-<ul>
-    <li><a href="index.html">Table of Contents</a></li>
-</ul>
+    <ul>
+        <li><a href="index.html">Table of Contents</a></li>
+    </ul>
+    <style>
+        body {
+            background: none;
+        }
+    </style>
 
-</body>
+    </body>
 </html>
