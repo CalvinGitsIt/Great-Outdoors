@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <a href="falls.html">
+    <div id="google_translate_element"></div>
+    <div class="horizontal-container">
+        <a href="falls.html">
         <img src="images/back.png" alt="See the Falls" style="width: 50px; height: 50px;
         border: none; border-radius: 5px">
       </a>
@@ -13,10 +15,16 @@
         <img src="images/next.png" alt="Walk Around the Lake" style="width: 50px; height: 50px;
         border: none; border-radius: 5px">
       </a>
-    <title>A Ferry Expedition</title>
+        <title>A Ferry Expedition</title>
+    </div>
     <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
     <script src="scripts/myscripts.js" defer></script>
     <style>
+        .horizontal-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
         .image-container {
             position: relative;
             display: inline-block;
@@ -79,6 +87,19 @@
         background: none;
     }
 </style>
+
+<!-- to your js part -->
+<script src="script.js"></script>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {pageLanguage: 'en'},
+        'google_translate_element'
+    );
+} 
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 
 </body>
 </html>

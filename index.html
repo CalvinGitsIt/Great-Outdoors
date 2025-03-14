@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <div id="google_translate_element"></div>
     <title>Welcome to Great Outdoors!</title>
     <link rel="stylesheet" type="text/css" href="styles/branchlevel.css">
     <script src="scripts/myscripts.js" defer></script>
@@ -55,5 +56,18 @@
             background: none;
         }
     </style>
+
+    <!-- to your js part -->
+    <script src="script.js"></script>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+    } 
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
