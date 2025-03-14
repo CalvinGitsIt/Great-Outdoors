@@ -5,25 +5,30 @@ body {
 }
 
 h1 {
-  color: darkblue;
+  color: black;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 290px;
+  margin: 0 auto;
 }
 
 img {
   width: 300px;
   height: 200px;
-  border: 10px solid green;
+  border: 10px solid rgb(0, 128, 0);
   color: white;
   border-radius: 20px;
   vertical-align: top;
 }
 
 figcaption {
-  width: 315px;
+  width: 200px;
   text-align: left;
   margin-left: 25px;
   color: black;
   font-style: italic;
   font-size: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .text-background {
